@@ -1,0 +1,15 @@
+For eg 'Sublime text 2'
+
+I installed it using 
+
+sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+sudo apt-get install sublime-text
+
+Then i have its .deb package file in /var/cache/apt/archives/ folder.. i can get its backup into a folder say /media/akash/Vanilla/Linux Packages/Xubuntu/sublime-text_build-3065_amd64.deb
+I can install it any time by this command
+
+cd /media/akash/Vanilla/Linux Packages/Xubuntu/sublime-text_build-3065_amd64.deb
+sudo dpkg -i sublime-text_build-3065_amd64.deb
+
+for which i wont need internet.

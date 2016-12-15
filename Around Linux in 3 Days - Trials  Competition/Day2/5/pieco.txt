@@ -1,0 +1,18 @@
+First i got the pathname of the pendrive device in my file name using this command
+
+df
+
+It was /dev/sdb5 ... It was having some data in it (can be seen in image). Then i unmounted it using
+
+sudo umount /dev/sdb5
+
+Then i formatted it to fat32 file system (indicated by .vfat in below command)
+
+sudo mkfs.vfat -n 'Ubuntu' -I /dev/sdb5
+
+here the name of the device is changed to 'Ubuntu' ..
+Then again I checked its details by
+
+df
+
+Its can be seen in the image that the /dev/sdb5 is having only 4bytes as used space...indicating its formatted

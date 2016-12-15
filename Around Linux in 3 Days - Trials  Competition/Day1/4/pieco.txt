@@ -1,0 +1,11 @@
+Earlier the maximize minimize and close button were left
+
+
+After this command,
+
+gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
+
+it got moved to right ..
+
+
+Here ':' indicates middle of the window.. so with respect to that ':right' and 'left:' is there.. Hence minimize,maximize,close are placed accordingly

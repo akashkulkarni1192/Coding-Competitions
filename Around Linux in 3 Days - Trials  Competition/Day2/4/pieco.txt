@@ -1,0 +1,25 @@
+For updating a grub splash screen, Screen should be made compatible to its format..
+Image should be utmost 640 x 480 pixels in size and It can contain maximum 14 colours 
+
+So for that , I took an image say batman.jpg , Converted into required format..
+
+convert -resize 640x480 -colors 14 batman.xpm batmannew.xpm
+
+I copied this image into /boot/grub folder, using command
+
+sudo cp batmannew.xpm /boot/grub
+
+Then i changed the grub configuration file ....
+
+sudo vim /etc/default/grub
+
+Added one line in it
+
+GRUB_BACKGROUND=/boot/grub/batmannew.xpm
+
+Saved it ..and updated the grub...
+
+sudo update-grub...
+Restarted...the system
+
+

@@ -1,0 +1,14 @@
+I can retrieve content from any website using 'wget' command. But it shows bulk of unnecessary output.. So i used 
+
+wget -q google.com
+
+-q option turns off its output..
+
+So using these concepts ..i wrote it in a shell script..
+if the exit status (stored in $? variable) is 0, command succesful -> then net connected
+else , not
+
+
+
+
+EVERY COMMAND SHOWN IN LEFT SIDE

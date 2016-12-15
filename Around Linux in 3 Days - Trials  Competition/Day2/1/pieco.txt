@@ -1,0 +1,17 @@
+First i will be logging into the server using ssh tool as root(ssh client), say Server ip address is 10.49.0.254
+
+ssh root@10.49.0.254
+
+Then i enter my username and password and connect to server
+
+Say, I know the username of my friend..I will check the details of all the users connected to this server using command
+
+w
+
+Then i check the terminal name of the corresponding username ...(In the pic, since i am not connected to any server, It shows only me as client). Say, the terminal name is /dev/pts/4
+
+sudo echo "Tell me the answer for this question !!!" > /dev/pts/4
+
+
+
+In the image, I am sending msg to myself...on my terminal only from my terminal ..

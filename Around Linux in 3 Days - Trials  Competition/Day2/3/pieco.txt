@@ -1,0 +1,18 @@
+First i inserted a pendrive
+It got mounted automatically
+u used this command to check details of all the mounted devices to find the path of the device drive under my file system
+
+sudo fdisk -l
+It was /dev/sdb
+
+I unmounted it using command 
+
+sudo umount /dev/sdb
+
+Then i created a directory in /media/usb , using
+
+sudo mkdir /media/usb
+
+Then i mounted it back using 
+
+sudo mount /dev/sdb /media/usb

@@ -1,0 +1,9 @@
+Right now my grub has
+
+0 -> Ubuntu
+1 -> Advanced Ubuntu
+2 -> Windows 8.1
+
+with default GRUB_DEFAULT as windows 8.1
+
+after editing the 'grub' file in /etc/default/grub, i.e changing the GRUB_DEFAULT = 0, Now the bootloader automatically loads up Ubuntu as default 

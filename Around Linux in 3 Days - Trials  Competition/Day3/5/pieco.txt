@@ -1,0 +1,20 @@
+First i downloaded the vlc-2.1.5.tar.xz (VLC media player source code) from the http://www.videolan.org/vlc/download-sources.html site
+
+i decompressed it using 
+
+tar -xf vlc-2.1.5.tar.xz
+
+then i moved to that directory
+
+cd vlc-2.1.5
+
+Then i ran following commands
+	
+./bootstrap			
+./configures 		[This shell script configures it ]
+make				[This builds the VLC]
+make install		[Installs the vlc and its plugins]
+
+Then i launched the vlc from current directory using
+
+./vlc

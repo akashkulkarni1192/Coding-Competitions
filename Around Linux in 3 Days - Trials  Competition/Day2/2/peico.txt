@@ -1,0 +1,4 @@
+1. Open ApplicationFinder
+2. Type SettingsManager
+3. Go to SettingsManager -> WindowManager
+4. Under Style Tab -> ButtonLayout , change the order of minimize,maximize,close button to left/right 

@@ -1,0 +1,14 @@
+Brightness details are found in the directory /sys/class/backlight/intel_backlight/
+where max_brightness stores the maximum brightness details and brightness and actual_brightness stores the value of current brightness which keep changing if we manually change the brightness
+
+I set the brightness level to the level i want. Noted down the value, say it was 490
+So By editing a file /etc/rc.local as follows we can set default value of brightness upon every boot
+
+sudo gedit /etc/rc.local
+
+
+add these two lines to set the those brightness level before 'exit 0' line
+
+
+echo 490 > /sys/class/backlight/intel_backlight/brightness
+echo 490 > /sys/class/backlight/intel_backlight/actual_brightness
